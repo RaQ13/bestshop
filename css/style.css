@@ -1,0 +1,69 @@
+:root {
+    --color-primary: #08A6E4;
+    --color-primary-shadow: rgba(7, 172, 230, .16);
+    --color-redish: #FB3B64;
+    --color-green: #55DFB4;
+    --color-black: #000000;
+    --color-gray: #A5A5A5;
+    --color-light-gray: #F7F7F7;
+    --color-white: #FFFFFF;
+    --raleway-font: 'Raleway', sans-serif;
+    --open-sans-font: 'Open Sans', sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 1352px;
+    height: 100%;
+}
+header {
+    background: url(../assets/Background.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 68px;
+}
+.banner-logo {
+    color: var(--color-primary);
+    font-size: 37px;
+    font-family: var(--raleway-font);
+}
+nav, .banner-nav, .banner-nav-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.banner-nav {
+    flex-direction: row;
+    color: var(--color-gray)
+}
+.banner-nav-content {
+    margin-left: 95px;
+    z-index: 1;
+}
+.banner-nav-content:hover {
+    border-bottom: 3px solid var(--color-primary);
+    cursor: pointer;
+}
+.banner-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 68px;
+    border-bottom: 3px solid var(--color-light-gray);
+    box-shadow: 0 0 8px;
+    opacity: 0.5;
+}
