@@ -20,13 +20,18 @@ body {
     width: 1352px;
     height: 100%;
 }
+p {
+    font-family: var(--open-sans-font);
+}
+header, .statistics, .statistics-content, .entries, .products, .posts, main, .right-side-first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 header {
     background-color: var(--color-white);
     width: 100%;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 .banner {
@@ -121,11 +126,6 @@ h1, h2 {
 .statistics {
     margin-top: -100px;
     background-color: var(--color-white);
-}
-.statistics, .statistics-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;
 }
 .statistics-content {
@@ -142,9 +142,6 @@ h2 {
     border-radius: 50%;
 }
 .entries, .products, .posts {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 .entries-image, .products-image, .posts-image {
@@ -188,4 +185,64 @@ h2 {
 }
 .green-circle {
     background: var(--color-green);
+}
+/* finished statistics section */
+main {
+    margin-top: 106px;
+}
+.benefits-container {
+    width: 80%;
+    flex-direction: column;
+}
+.first-benefit {
+    background-color: var(--color-white);
+    padding-top: 91px;
+    padding-bottom: 91px;
+    padding-left: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-side-first {
+    display: flex;
+    flex-direction: column;
+}
+.left-side-first p {
+    width: 430px;
+    line-height: 25px;
+}
+.left-side-first h2 {
+    margin-bottom: 20px;
+}
+.benefits-horizontal {
+    width: 50%;
+    height: 4px;
+    background-color: var(--color-redish);
+    margin-top: 50px;
+}
+.right-side-first, .left-side-first {
+    width: 50%;
+}
+.right-side-first {
+    position: relative;
+}
+.right-side-first-image {
+    width: 386px;
+    height: 219px;
+    transform: rotate(225deg);
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.right-side-first-picture {
+    width: 100%;
+    height: 100%;
+}
+.first-benefit-square{
+    width: 220px;
+    height: 220px;
+    background-color: var(--color-redish);
+    position: absolute;
+    border-radius: 50px;
+    transform: rotate(135deg);
+    margin-left: 200px;
 }
