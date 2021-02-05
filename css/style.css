@@ -13,15 +13,15 @@
 * {
     box-sizing: border-box;
 }
+body {
+    background-color: var(--color-light-gray);
+}
 .container {
     width: 1352px;
     height: 100%;
 }
 header {
-    background: url(../assets/Background.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: var(--color-white);
     width: 100%;
     height: 100vh;
     display: flex;
@@ -88,7 +88,7 @@ nav, .banner-nav, .banner-nav-content {
 .banner-main {
     text-align: center;
 }
-h1 {
+h1, h2 {
     font-size: 57px;
     color: var(--color-black);
     font-family: var(--raleway-font);
@@ -111,4 +111,81 @@ h1 {
 }
 .empty {
     height: 700px;
+    width: 100%;
+}
+.header-image {
+    width: 100%;
+    height: 100%;
+}
+/*finished banner */
+.statistics {
+    margin-top: -100px;
+    background-color: var(--color-white);
+}
+.statistics, .statistics-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.statistics-content {
+    justify-content: space-around;
+}
+h2 {
+    margin-bottom: 100px;
+    font-size: 42px;
+}
+.circle {
+    width: 63px;
+    height: 63px;
+    background: var(--color-redish);
+    border-radius: 50%;
+}
+.entries, .products, .posts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.entries-image, .products-image, .posts-image {
+    width: 44px;
+    height: 52px;
+    margin-left: 30px;
+    margin-top: 3px;
+}
+.products-image{
+    width: 65px;
+    height: 35px;
+    margin: 25%;
+}
+.posts-image {
+    width: 52px;
+    height: 48px;
+    margin-top: 10%;
+}
+.entries-picture, .products-picture, .posts-picture {
+    width: 100%;
+    height: 100%;
+}
+.entries p, .products p, .posts p{
+    font-family: var(--raleway-font);
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: 800;
+    letter-spacing: 5.96px;
+    margin-left: 15px;
+}
+.entries span, .products span, .posts span{
+    font-family: var(--raleway-font);
+    font-size: 20px;
+    color: var(--color-gray);
+    margin-left: 5px;
+    margin-top: 20px;
+    margin-bottom: 150px;
+}
+.blue-circle {
+    background: var(--color-primary);
+}
+.green-circle {
+    background: var(--color-green);
 }

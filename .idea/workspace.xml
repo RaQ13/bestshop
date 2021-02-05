@@ -67,9 +67,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
-  </component>
   <component name="ProjectId" id="1nzPALKTL5yBA8ZOgiU6nXDhI7T" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -81,8 +78,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/css" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/css" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -97,7 +100,11 @@
       <workItem from="1612470504441" duration="1798000" />
       <workItem from="1612472311655" duration="1867000" />
       <workItem from="1612474188594" duration="1801000" />
-      <workItem from="1612475998287" duration="1130000" />
+      <workItem from="1612475998287" duration="1181000" />
+      <workItem from="1612477194751" duration="1797000" />
+      <workItem from="1612479008721" duration="1815000" />
+      <workItem from="1612480843856" duration="1799000" />
+      <workItem from="1612482665107" duration="971000" />
     </task>
     <servers />
   </component>
