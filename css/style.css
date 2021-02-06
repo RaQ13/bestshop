@@ -486,6 +486,7 @@ h3 {
     display: inline-block;
     left: 0;
     top: -5px;
+    cursor: pointer;
 }
 .contact-question ul .phone:before {
     background-image: url("../assets/Phone Icon.svg");
