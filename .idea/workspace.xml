@@ -49,7 +49,6 @@
       <change beforePath="$PROJECT_DIR$/../../08_Dzien_4_-_Praca_domowa/01_Craze_Features/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Dzien_4_-_Praca_domowa/01_Craze_Features/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +123,9 @@
       <workItem from="1612570131089" duration="666000" />
       <workItem from="1612571937511" duration="1797000" />
       <workItem from="1612573743308" duration="1799000" />
-      <workItem from="1612575551596" duration="1095000" />
+      <workItem from="1612575551596" duration="1175000" />
+      <workItem from="1612576865367" duration="32000" />
+      <workItem from="1612615221635" duration="140000" />
     </task>
     <servers />
   </component>
