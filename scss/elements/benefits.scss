@@ -1,0 +1,118 @@
+.pricing .container {
+  margin-top: 100px;
+  margin-bottom: 84px;
+  display: flex;
+  flex-direction: column;
+
+}
+.offers {
+  text-align: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.basic, .professional, .premium{
+  width: 370px;
+  height: 460px;
+  border: 2px solid $color-redish;
+  border-radius: 30px;
+  flex-direction: column;
+}
+.basic-header, .professional-header, .premium-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 14px;
+}
+.professional {
+  border-color: $color-primary;
+  width: 400px;
+  height: 500px;
+  box-shadow: inset 0 0 5px 5px var(--color-primary-shadow), 0 0 5px 5px var(--color-primary-shadow);
+}
+.premium {
+  border-color: $color-green;
+}
+h3 {
+  margin-top: 30px;
+  font-family: $raleway-font;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+.offers span {
+  font: normal normal 300 46px $open-sans-font;
+}
+.offers p {
+  font: normal normal normal 14px $open-sans-font;
+}
+.basic span {
+  color: $color-redish;
+}
+.offers-empty {
+  width: 100%;
+  height: 24px;
+}
+.professional span {
+  color: $color-primary;
+}
+.premium span {
+  color: $color-green;
+}
+.professional .offer-options {
+  margin-top: 70px;
+}
+.limited p{
+  font: normal normal bold 12px var$raleway-font;
+  margin-top: 10px;
+}
+.offer-options {
+  font: normal normal normal 14px $open-sans-font;
+  margin-top: 50px;
+}
+.offer-options li{
+  margin-bottom: 20px;
+}
+.professional .offer-options li {
+  margin-bottom: 25px;
+}
+.basic .offer-options{
+  margin-top: 50px;
+}
+.offer-options ul li {
+  position: relative;
+}
+.offer-options ul li:before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  margin-right: 10px;
+  background-image: url("/assets/Checkmark-1.svg");
+}
+.offer-options ul .not:before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  margin-right: 10px;
+  background-image: url("/assets/Close.svg");
+}
+.basic-button, .professional-button, .premium-button {
+  width: 150px;
+  height: 50px;
+  background-color: $color-redish;
+  border-radius: 30px;
+  text-decoration: none;
+  font: normal normal bold 13px $open-sans-font;
+  color: $color-white;
+  position: relative;
+  bottom: -25px;
+}
+.professional-button {
+  background-color: $color-primary;
+  width: 165px;
+  height: 50px;
+}
+.premium-button {
+  background-color: $color-green;
+}

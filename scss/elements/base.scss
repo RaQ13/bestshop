@@ -1,0 +1,17 @@
+@import "../settings/mixins.scss";
+@import "../settings/variables.scss";
+
+body {
+  background-color: $color-light-gray;
+}
+
+p {
+  font-family: $open-sans-font;
+}
+
+header, .statistics, .statistics-content,
+.entries, .products, .posts, main, .right-side-first, .right-side-third, .pricing,
+.pricing .container, .offers, .basic, .professional, .premium, .basic-button, .professional-button,
+.premium-button, .contact, footer, footer .container {
+  @include center
+}

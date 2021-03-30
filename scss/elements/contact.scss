@@ -1,0 +1,119 @@
+.contact {
+  background-color: var(--color-white);
+  padding-top: 150px;
+}
+.contact .container {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-question, .contact-form {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.contact-question h3 {
+  font-weight: normal;
+  font-size: 57px;
+  margin-bottom: 22px;
+}
+.contact-question ul {
+  margin-top: 42px;
+  display: flex;
+  flex-direction: row;
+}
+.contact-question ul li {
+  padding-left: 40px;
+  font-family: var(--open-sans-font);
+  color: var(--color-gray);
+  position: relative;
+}
+.contact-question ul li:first-child{
+  margin-right: 20px;
+}
+.contact-question ul li:before, .contact-question ul .phone:before {
+  content: "";
+  width: 27px;
+  height: 27px;
+  background-image: url("/assets/Mail Icon.svg");
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: -5px;
+  cursor: pointer;
+}
+.contact-question ul .phone:before {
+  background-image: url("/assets/Phone Icon.svg");
+}
+form, input {
+  width: 100%;
+  background-color: transparent;
+  border: transparent;
+  border-bottom: 1px solid var(--color-gray);
+}
+label, input[type="checkbox"] + span {
+  font-family: var(--open-sans-font);
+  font-size: 15px;
+  color: var(--color-primary);
+  font-weight: bold;
+  letter-spacing: 3.28px;
+}
+label {
+  text-transform: uppercase;
+}
+input {
+  margin-bottom: 40px;
+  margin-top: 10px;
+  line-height: 40px;
+}
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkbox {
+  cursor: pointer;
+  display: flex;
+  color: var(--color-gray);
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.checkbox span {
+  height: 24px;
+  flex-shrink: 0;
+  flex-basis: 24px;
+  border: 1px solid var(--color-gray);
+  cursor: pointer;
+  border-radius: 3px;
+  margin-right: 11px;
+}
+.checkbox input:checked + span {
+  background-image: url("/assets/Checkmark.svg");
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+form {
+  border: none;
+}
+.send-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+button {
+  width: 226px;
+  height: 57px;
+  border-radius: 50px;
+  background-color: var(--color-primary);
+  border: none;
+  font: normal normal bold 13px var(--open-sans-font);
+  color: var(--color-white);
+}
