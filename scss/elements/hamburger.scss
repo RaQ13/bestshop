@@ -1,0 +1,111 @@
+
+//hamburger menu
+.banner {
+  position: relative;
+  z-index: 3;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    li{
+      a{
+        display: block;
+        padding: 10px 20px;
+        border-right: 1px solid #f4f4f4;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-gray;
+      }
+      a:hover {
+        color: $color-black;
+      }
+    }
+    li:last-of-type {
+      padding: 0 0 20px 0;
+      border-bottom: 3px solid $underline;
+    }
+  }
+  .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 15px 15px;
+    position: relative; // przykleja do końca prawej strony banneru
+    user-select: none;
+    margin-right: 20px;
+    .navicon {
+      background: $color-primary;
+      display: block;
+      height: 2px;
+      position: absolute;
+      transition: background .2s ease-out;
+      width: 18px;
+    }
+    .navicon:before {
+      background: $color-primary;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      width: 100%;
+      top: 5px;
+    }
+    .navicon:after {
+      background: $color-primary;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      width: 100%;
+      top: -5px;
+    }
+  }
+  .menu-btn {
+    display: none;
+  }
+  .menu-btn:hover{
+    color: $color-black;
+  }
+}
+
+
+//hamburger animation
+
+.banner .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.banner .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.banner .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.banner .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+//end of animation
+
+
+//end of hamburger menu

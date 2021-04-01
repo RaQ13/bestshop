@@ -10,3 +10,9 @@ $color-light-gray: #F7F7F7;
 $color-white: #FFFFFF;
 $raleway-font: 'Raleway', sans-serif;
 $open-sans-font: 'Open Sans', sans-serif;
+
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+
+$underline: color.scale($color-gray, $lightness: 60%),

@@ -1,21 +1,31 @@
 .statistics {
-  text-align: center;
+  .container {
+    .row {
+      display: flex;
+      justify-content: center;
+      h2 {
+        font-family: $raleway-font;
+        margin-bottom: 100px;
+        font-size: 35px;
+        width: 80%;
+        text-align: center;
+        margin-top: 50px;
+      }
+    }
+  }
 }
-.statistics-content {
-  justify-content: space-around;
+
+.entries, .products, .posts {
+  @include center;
+  flex-direction: column;
 }
-h2 {
-  margin-bottom: 100px;
-  font-size: 42px;
-}
+
+
 .circle {
   width: 63px;
   height: 63px;
   background: $color-redish;
   border-radius: 50%;
-}
-.entries, .products, .posts {
-  flex-direction: column;
 }
 .entries-image, .products-image, .posts-image {
   width: 44px;
@@ -48,10 +58,8 @@ h2 {
 .entries span, .products span, .posts span{
   font-family: $raleway-font;
   font-size: 20px;
-  color: $color-gray;
-  margin-left: 5px;
   margin-top: 20px;
-  margin-bottom: 150px;
+  color: $color-gray;
 }
 .blue-circle {
   background: $color-primary;
@@ -60,132 +68,3 @@ h2 {
   background: $color-green;
 }
 /* finished statistics section */
-main {
-  margin-top: 106px;
-  display: flex;
-  flex-direction: column;
-}
-.benefits-container {
-  width: 80%;
-  flex-direction: column;
-  margin-top: 37px;
-}
-.first-benefit, .second-benefit, .third-benefit{
-  padding-top: 91px;
-  padding-bottom: 91px;
-  padding-left: 36px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.second-benefit, .third-benefit{
-  height: 373px;
-  margin-bottom: 5px;
-}
-.left-side-first, .right-side-second, .left-side-third{
-  display: flex;
-  flex-direction: column;
-}
-.right-side-second {
-  margin-left: 350px;
-}
-.left-side-first p, .right-side-second p, .left-side-third p{
-  width: 430px;
-  line-height: 25px;
-}
-.left-side-first h2, .right-side-second h2, .left-side-third h2{
-  margin-bottom: 20px;
-}
-.right-side-second h2 {
-  width: 50%;
-}
-.benefits-horizontal {
-  width: 50%;
-  height: 4px;
-  background-color: $color-redish;
-  margin-top: 50px;
-}
-.right-side-first, .left-side-first, .right-side-second, .left-side-second  {
-  width: 50%;
-}
-.right-side-first, .left-side-second{
-  position: relative;
-}
-.right-side-first-image {
-  width: 386px;
-  height: 219px;
-  transform: rotate(225deg);
-  margin-left: 20px;
-  margin-top: 30px;
-}
-.right-side-first-picture, .left-side-second-picture, .right-side-third-picture{
-  width: 100%;
-  height: 100%;
-}
-.first-benefit-square{
-  width: 220px;
-  height: 220px;
-  background-color: $color-redish;
-  position: absolute;
-  border-radius: 50px;
-  transform: rotate(135deg);
-  margin-left: 200px;
-}
-.left-side-second-image {
-  width: 410px;
-  height: 340px;
-  margin-top: 10px;
-}
-.second-benefit-circle {
-  width: 320px;
-  height: 320px;
-  position: absolute;
-  border-radius: 50%;
-  background-color: $color-primary;
-  margin-left: 50px;
-  margin-top: -170px;
-}
-.horizontal-second {
-  width: 70%;
-  background-color: $color-primary;
-}
-.third-benefit {
-  background-color: $color-light-gray;
-}
-.third-benefit {
-  margin: 0 0 105px 0;
-  padding: 0;
-}
-.left-side-third {
-  height: 370px;
-  width: 60%;
-}
-.right-side-third {
-  background-color: $color-green;
-  height: 370px;
-  width: 40%;
-}
-.left-side-third h2{
-  width: 450px;
-  padding-top: 70px;
-  padding-left: 37px;
-}
-.left-side-third p {
-  width: 600px;
-  padding-left: 37px;
-}
-.horizontal-third {
-  margin-left: 37px;
-  background-color: $color-green;
-  width: 50%;
-}
-.empty-third {
-  height: 100%;
-  background-color: $color-gray;
-  width: 60px;
-}
-.right-side-third-image {
-  margin-top: 50px;
-  width: 60%;
-  height: 60%;
-}
