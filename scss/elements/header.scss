@@ -1,6 +1,10 @@
 @import "../settings/variables.scss";
 @import "../elements/base.scss";
 
+header {
+  background-color: $color-white;
+}
+
 @media (max-width: $mobile) {
   @import "hamburger.scss";
   .banner-logo {

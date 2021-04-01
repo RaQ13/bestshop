@@ -18,6 +18,7 @@
 .entries, .products, .posts {
   @include center;
   flex-direction: column;
+  background-color: $color-white;
 }
 
 
