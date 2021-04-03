@@ -379,115 +379,116 @@ main {
   .third-benefit .right-side-third .right-side-third-image .right-side-third-picture {
     margin-top: 30px;
   }
+
+  main {
+    margin-bottom: 120px;
+  }
 }
 .right-side-first-picture, .left-side-second-picture, .right-side-third-picture {
   width: 100%;
   height: 100%;
 }
 
-.pricing .container {
-  margin-top: 100px;
-  margin-bottom: 84px;
-  display: flex;
-  flex-direction: column;
-}
+@media (max-width: 480px) {
+  .pricing-offers {
+    display: flex;
+    flex-direction: column;
+  }
 
-.offers {
-  text-align: center;
-  width: 100%;
-  justify-content: space-between;
-}
+  .basic, .premium, .professional {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+  }
+  .basic .offer-options ul, .premium .offer-options ul, .professional .offer-options ul {
+    margin: 20px 0;
+  }
+  .basic .offer-options ul li, .premium .offer-options ul li, .professional .offer-options ul li {
+    margin-bottom: 20px;
+  }
 
-.basic, .professional, .premium {
-  width: 370px;
-  height: 460px;
-  border: 2px solid #FB3B64;
-  border-radius: 30px;
-  flex-direction: column;
-}
+  .professional .offer-options ul {
+    margin: 40px 0;
+  }
 
-.basic-header, .professional-header, .premium-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 14px;
-}
+  .basic, .premium {
+    margin: 30px;
+  }
 
-.professional {
-  border-color: #08A6E4;
-  width: 400px;
-  height: 500px;
-  box-shadow: inset 0 0 5px 5px var(--color-primary-shadow), 0 0 5px 5px var(--color-primary-shadow);
-}
+  .professional {
+    margin: 30px 10px 0;
+  }
 
-.premium {
-  border-color: #55DFB4;
-}
+  .basic-left, .professional-left, .premium-left {
+    text-align: center;
+  }
 
-h3 {
-  margin-top: 30px;
+  .basic-left {
+    width: 25%;
+  }
+}
+.pricing-title {
   font-family: "Raleway", sans-serif;
-  font-size: 24px;
+  font-size: 36px;
+}
+
+.basic, .premium, .professional {
+  border: 1px solid #FB3B64;
+}
+.basic h3, .premium h3, .professional h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
   font-weight: bold;
-  margin-bottom: 14px;
+}
+.basic span, .premium span, .professional span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
 }
 
-.offers span {
-  font: normal normal 300 46px "Open Sans", sans-serif;
-}
-
-.offers p {
-  font: normal normal normal 14px "Open Sans", sans-serif;
-}
-
-.basic span {
-  color: #FB3B64;
-}
-
-.offers-empty {
-  width: 100%;
-  height: 24px;
-}
-
-.professional span {
-  color: #08A6E4;
-}
-
-.premium span {
-  color: #55DFB4;
-}
-
-.professional .offer-options {
-  margin-top: 70px;
-}
-
-.limited p {
-  font: normal normal bold 12px var "Raleway", sans-serif;
+.professional .limited, .premium .limited {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
   margin-top: 10px;
 }
 
-.offer-options {
-  font: normal normal normal 14px "Open Sans", sans-serif;
-  margin-top: 50px;
+.basic:after, .premium:after, .professional:after {
+  content: "Begin";
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+  position: absolute;
+  background-color: #FB3B64;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  top: 205px;
 }
 
-.offer-options li {
-  margin-bottom: 20px;
+.professional:after {
+  top: 245px;
 }
 
-.professional .offer-options li {
-  margin-bottom: 25px;
+.pricing-offers .row .basic span {
+  color: #FB3B64;
 }
-
-.basic .offer-options {
-  margin-top: 50px;
+.pricing-offers .row .professional span {
+  color: #08A6E4;
 }
-
-.offer-options ul li {
+.pricing-offers .row .premium span {
+  color: #55DFB4;
+}
+.pricing-offers .row .basic .offer-options ul li, .pricing-offers .row .professional .offer-options ul li, .pricing-offers .row .premium .offer-options ul li {
   position: relative;
 }
-
-.offer-options ul li:before {
+.pricing-offers .row .basic .offer-options ul li:before, .pricing-offers .row .professional .offer-options ul li:before, .pricing-offers .row .premium .offer-options ul li:before {
   content: "";
   width: 11px;
   height: 11px;
@@ -495,36 +496,13 @@ h3 {
   margin-right: 10px;
   background-image: url("/assets/Checkmark-1.svg");
 }
-
-.offer-options ul .not:before {
+.pricing-offers .row .basic .offer-options ul .not:before, .pricing-offers .row .professional .offer-options ul .not:before, .pricing-offers .row .premium .offer-options ul .not:before {
   content: "";
   width: 11px;
   height: 11px;
   display: inline-block;
   margin-right: 10px;
   background-image: url("/assets/Close.svg");
-}
-
-.basic-button, .professional-button, .premium-button {
-  width: 150px;
-  height: 50px;
-  background-color: #FB3B64;
-  border-radius: 30px;
-  text-decoration: none;
-  font: normal normal bold 13px "Open Sans", sans-serif;
-  color: #FFFFFF;
-  position: relative;
-  bottom: -25px;
-}
-
-.professional-button {
-  background-color: #08A6E4;
-  width: 165px;
-  height: 50px;
-}
-
-.premium-button {
-  background-color: #55DFB4;
 }
 
 .contact {

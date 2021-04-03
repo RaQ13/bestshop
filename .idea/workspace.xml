@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b421dba-3c60-4739-aff1-1de5cf962a25" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/scss/elements/pricing_buttons.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/elements/benefits.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/elements/benefits.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/elements/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/elements/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/elements/statistics.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/elements/statistics.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +106,9 @@
       <workItem from="1615309674485" duration="143000" />
       <workItem from="1616239507193" duration="124000" />
       <workItem from="1617108772303" duration="12891000" />
-      <workItem from="1617291427781" duration="8706000" />
+      <workItem from="1617291427781" duration="8830000" />
+      <workItem from="1617371298821" duration="4260000" />
+      <workItem from="1617453251317" duration="2711000" />
     </task>
     <servers />
   </component>

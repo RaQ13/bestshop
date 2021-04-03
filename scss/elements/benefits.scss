@@ -1,6 +1,4 @@
-@media (max-width: $mobile) {
-  
-}
+
 
 main {
   margin: 0 30px;
@@ -114,224 +112,160 @@ main {
       }
     }
   }
+  main {
+    margin-bottom: 120px;
+  }
 }
 
-.right-side-first-picture, .left-side-second-picture, .right-side-third-picture{
+.right-side-first-picture, .left-side-second-picture, .right-side-third-picture {
   width: 100%;
   height: 100%;
 }
+// upper end
 
 
 
-
-
-//.right-side-first-image {
-//  width: 386px;
-//  height: 219px;
-//  transform: rotate(225deg);
-//  margin-left: 20px;
-//  margin-top: 30px;
-//}
-
-//.first-benefit-square{
-//  width: 220px;
-//  height: 220px;
-//  background-color: $color-redish;
-//  position: relative;
-//  border-radius: 50px;
-//  transform: rotate(135deg);
-//  margin-left: 200px;
-//}
-
-
-
-
-//.left-side-second-image {
-//  width: 410px;
-//  height: 340px;
-//  margin-top: 10px;
-//}
-//.second-benefit-circle {
-//  width: 320px;
-//  height: 320px;
-//  position: absolute;
-//  border-radius: 50%;
-//  background-color: $color-primary;
-//  margin-left: 50px;
-//  margin-top: -170px;
-//}
-//.horizontal-second {
-//  width: 70%;
-//  background-color: $color-primary;
-//}
-
-
-
-
-
-
-
-//.third-benefit {
-//  background-color: $color-light-gray;
-//}
-//.third-benefit {
-//  margin: 0 0 105px 0;
-//  padding: 0;
-//}
-//.left-side-third {
-//  height: 370px;
-//  width: 60%;
-//}
-//.right-side-third {
-//  background-color: $color-green;
-//  height: 370px;
-//  width: 40%;
-//}
-
-//.horizontal-third {
-//  margin-left: 37px;
-//  background-color: $color-green;
-//  width: 50%;
-//}
-//.empty-third {
-//  height: 100%;
-//  background-color: $color-gray;
-//  width: 60px;
-//}
-//.right-side-third-image {
-//  margin-top: 50px;
-//  width: 60%;
-//  height: 60%;
-//}
-
-//finished upper benefits section
-
-
-
-
-
-
-
-
-
-
-
-
-.pricing .container {
-  margin-top: 100px;
-  margin-bottom: 84px;
-  display: flex;
-  flex-direction: column;
-
+@media (max-width: $mobile) {
+  .pricing-offers {
+    display: flex;
+    flex-direction: column;
+  }
+  .basic, .premium, .professional {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    .offer-options {
+      ul {
+        margin: 20px 0;
+        li {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  .professional {
+  .offer-options {
+    ul {
+      margin: 40px 0;
+    }
+  }
+  }
+  .basic, .premium {
+    margin: 30px;
+  }
+  .professional {
+    margin: 30px 10px 0;
+  }
+  .basic-left, .professional-left, .premium-left {
+    text-align: center;
+  }
+  .basic-left {
+    width: 25%;
+  }
 }
-.offers {
-  text-align: center;
-  width: 100%;
-  justify-content: space-between;
-}
-.basic, .professional, .premium{
-  width: 370px;
-  height: 460px;
-  border: 2px solid $color-redish;
-  border-radius: 30px;
-  flex-direction: column;
-}
-.basic-header, .professional-header, .premium-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 14px;
-}
-.professional {
-  border-color: $color-primary;
-  width: 400px;
-  height: 500px;
-  box-shadow: inset 0 0 5px 5px var(--color-primary-shadow), 0 0 5px 5px var(--color-primary-shadow);
-}
-.premium {
-  border-color: $color-green;
-}
-h3 {
-  margin-top: 30px;
+
+.pricing-title {
   font-family: $raleway-font;
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 14px;
+  font-size: 36px;
 }
-.offers span {
-  font: normal normal 300 46px $open-sans-font;
+
+
+.basic, .premium, .professional {
+  border: 1px solid $color-redish;
+    h3 {
+    font-family: $raleway-font;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+   }
+   span {
+    font-family: $open-sans-font;
+    font-size: 40px;
+   }
 }
-.offers p {
-  font: normal normal normal 14px $open-sans-font;
+.professional, .premium {
+  .limited {
+    font-family: $raleway-font;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
 }
-.basic span {
-  color: $color-redish;
-}
-.offers-empty {
-  width: 100%;
-  height: 24px;
-}
-.professional span {
-  color: $color-primary;
-}
-.premium span {
-  color: $color-green;
-}
-.professional .offer-options {
-  margin-top: 70px;
-}
-.limited p{
-  font: normal normal bold 12px var$raleway-font;
-  margin-top: 10px;
-}
-.offer-options {
-  font: normal normal normal 14px $open-sans-font;
-  margin-top: 50px;
-}
-.offer-options li{
-  margin-bottom: 20px;
-}
-.professional .offer-options li {
-  margin-bottom: 25px;
-}
-.basic .offer-options{
-  margin-top: 50px;
-}
-.offer-options ul li {
-  position: relative;
-}
-.offer-options ul li:before {
-  content: "";
-  width: 11px;
-  height: 11px;
-  display: inline-block;
-  margin-right: 10px;
-  background-image: url("/assets/Checkmark-1.svg");
-}
-.offer-options ul .not:before {
-  content: "";
-  width: 11px;
-  height: 11px;
-  display: inline-block;
-  margin-right: 10px;
-  background-image: url("/assets/Close.svg");
-}
-.basic-button, .professional-button, .premium-button {
+.basic:after, .premium:after, .professional:after{
+  content: "Begin";
   width: 150px;
   height: 50px;
-  background-color: $color-redish;
   border-radius: 30px;
-  text-decoration: none;
-  font: normal normal bold 13px $open-sans-font;
+  position: absolute;
+  background-color: $color-redish;
+  @include center;
   color: $color-white;
-  position: relative;
-  bottom: -25px;
+  font-family: $open-sans-font;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  top: 205px;
 }
-.professional-button {
-  background-color: $color-primary;
-  width: 165px;
-  height: 50px;
+.professional:after {
+  top: 245px;
 }
-.premium-button {
-  background-color: $color-green;
+
+
+
+
+
+
+
+.pricing-offers {
+  .row {
+    .basic {
+      span {
+       color: $color-redish;
+      }
+    }
+    .professional {
+      span {
+        color: $color-primary;
+      }
+    }
+    .premium {
+      span {
+        color: $color-green;
+      }
+    }
+    .basic, .professional, .premium {
+      .offer-options {
+        ul {
+          li {
+            position: relative;
+          }
+          li:before {
+            content: "";
+            width: 11px;
+            height: 11px;
+            display: inline-block;
+            margin-right: 10px;
+            background-image: url("/assets/Checkmark-1.svg");
+          }
+          .not:before {
+            content: "";
+            width: 11px;
+            height: 11px;
+            display: inline-block;
+            margin-right: 10px;
+            background-image: url("/assets/Close.svg");
+          }
+        }
+      }
+    }
+  }
 }
+
+
+
+
+
+
+
+
