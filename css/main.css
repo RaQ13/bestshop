@@ -615,8 +615,7 @@ footer {
 
 h4 {
   color: #08A6E4;
-  font: normal normal 300 26px Raleway;
-  margin-bottom: 6px;
+  font: normal normal 300 26px "Raleway", sans-serif;
 }
 
 .footer-left p {
@@ -640,6 +639,16 @@ footer .container {
   justify-content: space-between;
 }
 
+@media (max-width: 480px) {
+  footer .container .footer-left h4 {
+    margin-top: 25px;
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+  }
+  footer .container .footer-right a {
+    margin-top: 25px;
+  }
+}
 * {
   box-sizing: border-box;
 }

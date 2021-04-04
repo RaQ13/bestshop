@@ -12,8 +12,7 @@ footer {
 }
 h4 {
   color: $color-primary;
-  font: normal normal 300 26px Raleway;
-  margin-bottom: 6px;
+  font: normal normal 300 26px $raleway-font;
 }
 .footer-left p {
   font-size: 15px;
@@ -31,4 +30,24 @@ h4 {
 }
 footer .container{
   justify-content: space-between;
+}
+
+@media (max-width: $mobile) {
+  footer {
+    .container {
+      .footer-left {
+        h4 {
+          margin-top: 25px;
+          font-family: $raleway-font;
+          font-size: 26px;
+        }
+      }
+
+      .footer-right {
+      a {
+        margin-top: 25px;
+      }
+      }
+    }
+  }
 }
