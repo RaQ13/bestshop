@@ -1,4 +1,5 @@
 .statistics {
+  background-color: $color-white;
   .container {
     .row {
       display: flex;
@@ -69,3 +70,10 @@
   background: $color-green;
 }
 /* finished statistics section */
+
+
+@media (min-width: $mobile) {
+  .statistics {
+    margin-bottom: 80px;
+  }
+}
