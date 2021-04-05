@@ -104,56 +104,15 @@
 }
 
 
+@media (min-width: $mobile) {
+  .contact-question {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-left: 120px !important;
+  }
+}
 
 
 
 
-
-
-//input[type="checkbox"] {
-//  position: absolute;
-//  opacity: 0;
-//  cursor: pointer;
-//  height: 0;
-//  width: 0;
-//}
-//.checkbox {
-//  cursor: pointer;
-//  display: flex;
-//  color: var(--color-gray);
-//  font-size: 12px;
-//  margin-bottom: 20px;
-//}
-//.checkbox span {
-//  height: 24px;
-//  flex-shrink: 0;
-//  flex-basis: 24px;
-//  border: 1px solid var(--color-gray);
-//  cursor: pointer;
-//  border-radius: 3px;
-//  margin-right: 11px;
-//}
-//.checkbox input:checked + span {
-//  background-image: url("/assets/Checkmark.svg");
-//  background-position: center;
-//  background-size: 70%;
-//  background-repeat: no-repeat;
-//}
-//form {
-//  border: none;
-//}
-//.send-container {
-//  width: 100%;
-//  display: flex;
-//  justify-content: flex-end;
-//  flex-direction: row;
-//}
-//button {
-//  width: 226px;
-//  height: 57px;
-//  border-radius: 50px;
-//  background-color: var(--color-primary);
-//  border: none;
-//  font: normal normal bold 13px var(--open-sans-font);
-//  color: var(--color-white);
-//}

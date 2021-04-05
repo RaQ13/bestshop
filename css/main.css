@@ -864,6 +864,14 @@ main {
   color: #FFFFFF;
 }
 
+@media (min-width: 480px) {
+  .contact-question {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-left: 120px !important;
+  }
+}
 footer {
   height: 90px;
   background-color: #F7F7F7;
