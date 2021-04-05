@@ -299,6 +299,9 @@ main {
   }
 }
 
+//mobile end
+
+
 .pricing-title {
   font-family: $raleway-font;
   font-size: 36px;
@@ -344,6 +347,68 @@ main {
 .professional:after {
   top: 245px;
 }
+
+@media (min-width: $mobile) {
+  .pricing {
+    .pricing-offers {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .offers-row {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+  .basic, .professional, .premium {
+    position: relative;
+    width: calc(33% - 20px) !important;
+    min-width: 260px;
+    @include center;
+    flex-direction: column;
+    text-align: center;
+    .offer-options {
+      text-align: center;
+      margin-top: 60px;
+      ul {
+        li {
+          font-family: $open-sans-font;
+          margin-bottom: 20px;
+        }
+        li:last-of-type {
+          padding-bottom: 20px;
+        }
+      }
+    }
+    .basic-left {
+      padding-bottom: 20px;
+    }
+  }
+  .professional {
+    height: 420px;
+  }
+  .basic:after, .professional:after, .premium:after {
+    position: absolute;
+    top: 355px;
+    left: 25%;
+  }
+  .basic:after {
+    background-color: $color-redish;
+  }
+  .professional:after {
+    top: 395px;
+    background-color: $color-primary;
+  }
+  .premium:after {
+    background-color: $color-green;
+  }
+}
+
+
 
 
 

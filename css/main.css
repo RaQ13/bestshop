@@ -679,6 +679,69 @@ main {
   top: 245px;
 }
 
+@media (min-width: 480px) {
+  .pricing .pricing-offers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pricing .pricing-offers .offers-row {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .basic, .professional, .premium {
+    position: relative;
+    width: calc(33% - 20px) !important;
+    min-width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .basic .offer-options, .professional .offer-options, .premium .offer-options {
+    text-align: center;
+    margin-top: 60px;
+  }
+  .basic .offer-options ul li, .professional .offer-options ul li, .premium .offer-options ul li {
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 20px;
+  }
+  .basic .offer-options ul li:last-of-type, .professional .offer-options ul li:last-of-type, .premium .offer-options ul li:last-of-type {
+    padding-bottom: 20px;
+  }
+  .basic .basic-left, .professional .basic-left, .premium .basic-left {
+    padding-bottom: 20px;
+  }
+
+  .professional {
+    height: 420px;
+  }
+
+  .basic:after, .professional:after, .premium:after {
+    position: absolute;
+    top: 355px;
+    left: 25%;
+  }
+
+  .basic:after {
+    background-color: #FB3B64;
+  }
+
+  .professional:after {
+    top: 395px;
+    background-color: #08A6E4;
+  }
+
+  .premium:after {
+    background-color: #55DFB4;
+  }
+}
 .pricing-offers .row .basic span {
   color: #FB3B64;
 }
