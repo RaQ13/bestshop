@@ -27,6 +27,10 @@ header, .statistics, .statistics-content,
 header {
   background-color: #FFFFFF;
 }
+header .container {
+  max-width: 100%;
+  margin: 0;
+}
 
 @media (min-width: 480px) {
   .banner:after {
@@ -258,6 +262,18 @@ header {
   }
   .banner-main .container .banner-main-content p {
     width: 70%;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .banner-logo {
+    padding: 10px 10px 10px 0 !important;
+  }
+
+  .menu li {
+    padding: 10px !important;
+  }
+  .menu li a {
+    font-size: 12px !important;
   }
 }
 .statistics {
@@ -638,6 +654,7 @@ main {
 
 .basic, .premium, .professional {
   border: 1px solid #FB3B64;
+  border-radius: 10px;
 }
 .basic h3, .premium h3, .professional h3 {
   font-family: "Raleway", sans-serif;
@@ -648,6 +665,14 @@ main {
 .basic span, .premium span, .professional span {
   font-family: "Open Sans", sans-serif;
   font-size: 40px;
+}
+
+.professional {
+  border-color: #08A6E4;
+}
+
+.premium {
+  border-color: #55DFB4;
 }
 
 .professional .limited, .premium .limited {
@@ -680,6 +705,10 @@ main {
 }
 
 @media (min-width: 480px) {
+  .pricing {
+    margin: 100px 0;
+    margin-bottom: 0;
+  }
   .pricing .pricing-offers {
     display: flex;
     flex-direction: column;
@@ -693,11 +722,13 @@ main {
     justify-content: space-between;
     align-items: center;
   }
+  .pricing .pricing-offers .pricing-title {
+    margin-top: 80px;
+  }
 
   .basic, .professional, .premium {
     position: relative;
-    width: calc(33% - 20px) !important;
-    min-width: 260px;
+    max-width: 31% !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -742,6 +773,10 @@ main {
     background-color: #55DFB4;
   }
 }
+.pricing {
+  background-color: #FFFFFF;
+}
+
 .pricing-offers .row .basic span {
   color: #FB3B64;
 }
@@ -769,6 +804,34 @@ main {
   display: inline-block;
   margin-right: 10px;
   background-image: url("/assets/Close.svg");
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .pricing {
+    margin-bottom: 800px;
+    background-color: transparent;
+  }
+
+  .basic, .professional, .premium {
+    max-width: 100% !important;
+    background-color: #FFFFFF;
+  }
+
+  .basic:after, .professional:after, .premium:after {
+    position: absolute;
+    top: 355px;
+    left: 40%;
+  }
+
+  .professional:after {
+    top: 395px;
+  }
+}
+.contact {
+  background-color: #FFFFFF;
+}
+.contact .container {
+  margin-top: 50px;
 }
 
 .contact-question h3 {
@@ -945,7 +1008,6 @@ body {
   margin-bottom: 30px;
   min-height: 1px;
   width: 100%;
-  border: 1px solid black;
 }
 .container .row {
   margin-left: -15px;

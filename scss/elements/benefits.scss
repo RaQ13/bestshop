@@ -310,6 +310,7 @@ main {
 
 .basic, .premium, .professional {
   border: 1px solid $color-redish;
+  border-radius: 10px;
     h3 {
     font-family: $raleway-font;
     font-size: 20px;
@@ -320,6 +321,12 @@ main {
     font-family: $open-sans-font;
     font-size: 40px;
    }
+}
+.professional {
+  border-color: $color-primary;
+}
+.premium {
+  border-color: $color-green;
 }
 .professional, .premium {
   .limited {
@@ -350,6 +357,8 @@ main {
 
 @media (min-width: $mobile) {
   .pricing {
+    margin: 100px 0;
+    margin-bottom: 0;
     .pricing-offers {
       display: flex;
       flex-direction: column;
@@ -362,12 +371,14 @@ main {
         justify-content: space-between;
         align-items: center;
       }
+      .pricing-title {
+        margin-top: 80px;
+      }
     }
   }
   .basic, .professional, .premium {
     position: relative;
-    width: calc(33% - 20px) !important;
-    min-width: 260px;
+    max-width: 31% !important;
     @include center;
     flex-direction: column;
     text-align: center;
@@ -412,7 +423,9 @@ main {
 
 
 
-
+.pricing {
+  background-color: $color-white;
+}
 
 .pricing-offers {
   .row {
@@ -460,7 +473,24 @@ main {
 }
 
 
-
+@media (min-width: $mobile) and (max-width: $tablet) {
+  .pricing {
+    margin-bottom: 800px;
+    background-color: transparent;
+  }
+  .basic, .professional, .premium {
+    max-width: 100% !important;
+    background-color: $color-white;
+  }
+  .basic:after, .professional:after, .premium:after {
+    position: absolute;
+    top: 355px;
+    left: 40%;
+  }
+  .professional:after {
+    top: 395px;
+  }
+}
 
 
 

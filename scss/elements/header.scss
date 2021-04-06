@@ -3,6 +3,10 @@
 
 header {
   background-color: $color-white;
+  .container {
+    max-width: 100%;
+    margin: 0;
+  }
 }
 @media (min-width: $mobile) {
   .banner:after {
@@ -144,3 +148,16 @@ header {
 }
 
 
+@media (min-width: $mobile) and (max-width: $tablet) {
+  .banner-logo {
+    padding: 10px 10px 10px 0!important;
+  }
+  .menu {
+    li {
+      padding: 10px!important;
+      a {
+        font-size: 12px!important;
+      }
+    }
+  }
+}

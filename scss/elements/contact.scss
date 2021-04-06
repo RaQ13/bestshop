@@ -1,9 +1,9 @@
-
-@media (max-width: $mobile) {
-
+.contact {
+  background-color: $color-white;
+  .container {
+    margin-top: 50px;
+  }
 }
-
-
 .contact-question {
   h3 {
     font-size: 40px;
