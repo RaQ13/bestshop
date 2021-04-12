@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b421dba-3c60-4739-aff1-1de5cf962a25" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/elements/calculator.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/elements/benefits.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/elements/benefits.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/elements/contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/elements/contact.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/elements/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/elements/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/elements/pricing_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/generic/grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/generic/grid.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,14 +45,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js" />
       <recent name="$PROJECT_DIR$/css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -116,7 +119,9 @@
       <workItem from="1617609986498" duration="3563000" />
       <workItem from="1617619485355" duration="2078000" />
       <workItem from="1617638799280" duration="7862000" />
-      <workItem from="1617725050294" duration="1289000" />
+      <workItem from="1617725050294" duration="1950000" />
+      <workItem from="1617808562641" duration="50000" />
+      <workItem from="1618239975708" duration="2638000" />
     </task>
     <servers />
   </component>
