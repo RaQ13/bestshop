@@ -1,4 +1,79 @@
-.calc-container {
+.calc {
   @include center;
-  flex-direction: column;
+  .calc-container {
+    @include center;
+    flex-direction: column;
+  }
+  .calc__columns {
+    width: 100%;
+  }
+}
+
+
+.calc__input {
+  input {
+    margin-bottom: 20px;
+  }
+}
+
+#products, #orders, .calc__select {
+  padding-left: 20px;
+  height: 40px;
+  width: 100%;
+  border: 1px solid $color-primary;
+  border-radius: 5px;
+}
+input[type=number]::-webkit-inner-spin-button{
+  cursor: pointer;
+  background-color: red;
+}
+#products:focus, #orders:focus {
+  border: 3px solid $color-primary;
+}
+.calc__select {
+  height: 40px;
+}
+.select__dropdown {
+
+}
+
+
+//checkboxy
+
+.calc__form {
+  label, input[type="checkbox"] + span {
+    font-family: $open-sans-font;
+    font-size: 15px;
+    color: $color-primary;
+    font-weight: bold;
+    letter-spacing: 3.28px;
+  }
+  input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .checkbox {
+    cursor: pointer;
+    display: flex;
+    color: $color-gray;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .checkbox span {
+    height: 20px;
+    flex-shrink: 0;
+    flex-basis: 24px;
+    border: 1px solid $color-gray;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  .checkbox input:checked + span {
+    background-image: url("/assets/Checkmark.svg");
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+  }
 }

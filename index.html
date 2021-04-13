@@ -202,9 +202,8 @@
         <div class="row">
     <h2>Calculate how much you’ll pay</h2>
         </div>
-    <div class="calc__columns">
-        <div class="row">
-        <form class="calc__form">
+    <div class="calc__columns row">
+        <form class="calc__form col-sm-12 col-md-6">
             <div class="calc__input">
                 <input type="number" class="form__input" id="products" min="1" step="1" placeholder="Products quantity"/>
             </div>
@@ -221,27 +220,27 @@
                     <li data-value="premium">Premium</li>
                 </ul>
             </div>
-            <label class="form__checkbox">
-                <input type="checkbox" id="accounting"/>
+            <label class="checkbox">
+                <input type="checkbox" id="accounting">
                 <span class="checkbox"></span>
                 <p class="consent__text">Accounting</p>
             </label>
-            <label class="form__checkbox">
-                <input type="checkbox" id="terminal"/>
+            <label class="checkbox">
+                <input type="checkbox" id="terminal">
                 <span class="checkbox"></span>
                 <p class="consent__text">Rental of a payment terminal</p>
             </label>
         </form>
-        <div class="calc__summary">
-            <ul>
+        <div class="calc__summary col-sm-12 col-md-6">
+            <ul id="summary-list">
                 <li class="list__item" data-id="products">
                     <span class="item__type">Products</span>
-                    <span class="item__calc">20 * $0.5</span>
+                    <span class="item__calc"> * $0.5</span>
                     <span class="item__price">$10</span>
                 </li>
                 <li class="list__item" data-id="orders">
                     <span class="item__type">Orders</span>
-                    <span class="item__calc">20 * $0.5</span>
+                    <span class="item__calc">* $ 0.25 </span>
                     <span class="item__price">$10</span>
                 </li>
                 <li class="list__item" data-id="package">
@@ -262,7 +261,6 @@
                 <span>Total</span>
                 <span class="total__price">$700</span>
             </div>
-        </div>
         </div>
     </div>
     </div>
