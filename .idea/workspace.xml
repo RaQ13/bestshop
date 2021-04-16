@@ -43,7 +43,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/../../../node_modules/gulp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Loans" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -56,6 +57,17 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -120,7 +132,10 @@
       <workItem from="1617725050294" duration="1950000" />
       <workItem from="1617808562641" duration="50000" />
       <workItem from="1618239975708" duration="6822000" />
-      <workItem from="1618321581227" duration="9362000" />
+      <workItem from="1618321581227" duration="15259000" />
+      <workItem from="1618414152614" duration="9663000" />
+      <workItem from="1618496261543" duration="15111000" />
+      <workItem from="1618579262405" duration="2122000" />
     </task>
     <servers />
   </component>

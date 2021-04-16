@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -214,6 +214,7 @@
                 <div class="select__input">
                     Choose package
                 </div>
+                <div class="select-down"></div><div class="select-up"></div>
                 <ul class="select__dropdown">
                     <li data-value="basic">Basic</li>
                     <li data-value="professional">Professional</li>
@@ -234,32 +235,42 @@
         <div class="calc__summary col-sm-12 col-md-6">
             <ul id="summary-list">
                 <li class="list__item" data-id="products">
+                    <div>
                     <span class="item__type">Products</span>
                     <span class="item__calc"> * $0.5</span>
                     <span class="item__price">$10</span>
+                    </div>
                 </li>
                 <li class="list__item" data-id="orders">
+                    <div>
                     <span class="item__type">Orders</span>
                     <span class="item__calc">* $ 0.25 </span>
                     <span class="item__price">$10</span>
+                    </div>
                 </li>
                 <li class="list__item" data-id="package">
+                    <div>
                     <span class="item__type">Package</span>
                     <span class="item__calc">Premium</span>
                     <span class="item__price">$10</span>
+                    </div>
                 </li>
                 <li class="list__item" data-id="accounting">
+                    <div>
                     <span class="item__type">Accounting</span>
                     <span class="item__price">$10</span>
+                    </div>
                 </li>
                 <li class="list__item" data-id="terminal">
+                    <div>
                     <span class="item__type">Terminal</span>
                     <span class="item__price">$10</span>
+                    </div>
                 </li>
             </ul>
             <div class="summary__total" id="total-price">
                 <span>Total</span>
-                <span class="total__price">$700</span>
+                <span class="total__price">$0</span>
             </div>
         </div>
     </div>
