@@ -32,6 +32,7 @@ let professional = 25;
 let premium = 60;
 let accountingsum = 35;
 let terminalsum = 5;
+let dropdownsum = 0;
 
 
 
@@ -75,6 +76,12 @@ summaryElements.forEach(function (el){
 dropDownList.addEventListener("click", function (ev){
     summaryElements[2].style.display = "block";
     if (ev.target === dropDownList) {
+        summaryElements[2].style.display = "none";
+        basic = 0;
+        professional = 0;
+        premium = 0;
+        totalValueNumber = orderSum + productSum + basic;
+        totalValue.innerText = "$" + totalValueNumber;
 
     } else {
         packageSelect.firstElementChild.innerText = ev.target.innerText;
@@ -83,13 +90,16 @@ dropDownList.addEventListener("click", function (ev){
             summaryElements[2].firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.innerText = "$" + basic;
             totalValueNumber = orderSum + productSum + basic;
             totalValue.innerText = "$" + totalValueNumber;
+
         }
         if (ev.target.innerText === "Professional") {
+            professional = 25;
             summaryElements[2].firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.innerText = "$" + professional;
             totalValueNumber = orderSum + productSum + professional;
             totalValue.innerText = "$" + totalValueNumber;
         }
         if (ev.target.innerText === "Premium") {
+            premium = 60;
             summaryElements[2].firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.innerText = "$" + premium;
             totalValueNumber = orderSum + productSum + premium;
             totalValue.innerText = "$" + totalValueNumber;
