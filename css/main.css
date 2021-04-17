@@ -998,7 +998,14 @@ footer .container {
   align-items: center;
   flex-direction: column;
 }
+.calc .calc-container .row h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 45px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
 .calc .calc__columns {
+  margin-bottom: 50px;
   width: 100%;
 }
 
@@ -1148,6 +1155,8 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .calc__summary {
+  font-family: "Open Sans", sans-serif;
+  color: #FFFFFF;
   position: relative;
 }
 .calc__summary #summary-list li {
@@ -1164,6 +1173,7 @@ input[type=number]::-webkit-inner-spin-button {
   align-items: center;
 }
 .calc__summary #summary-list li div span {
+  font-weight: 900;
   margin-top: 12px;
 }
 .calc__summary #summary-list li[data-id=accounting] div, .calc__summary #summary-list li[data-id=terminal] div {
@@ -1192,7 +1202,30 @@ input[type=number]::-webkit-inner-spin-button {
 .summary__total span:first-child {
   padding-right: 80px;
 }
+.summary__total span:last-child {
+  font-weight: 900;
+}
 
+@media (max-width: 480px) {
+  .calc h2 {
+    text-align: center;
+  }
+
+  .summary__total {
+    bottom: -40px;
+  }
+}
+@media (min-width: 480px) and (max-width: 1024px) {
+  .calc h2 {
+    margin: auto;
+    width: 70%;
+    text-align: center;
+  }
+
+  .summary__total {
+    bottom: -40px;
+  }
+}
 * {
   box-sizing: border-box;
 }

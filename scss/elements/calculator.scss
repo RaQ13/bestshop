@@ -5,8 +5,17 @@
   .calc-container {
     @include center;
     flex-direction: column;
+    .row {
+      h2 {
+        font-family: $raleway-font;
+        font-size: 45px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+      }
+    }
   }
   .calc__columns {
+    margin-bottom: 50px;
     width: 100%;
   }
 }
@@ -144,6 +153,8 @@ input[type=number]::-webkit-inner-spin-button{
 
 //prawa strona
 .calc__summary {
+  font-family: $open-sans-font;
+  color: $color-white;
   position: relative;
   #summary-list {
     li {
@@ -156,6 +167,7 @@ input[type=number]::-webkit-inner-spin-button{
         justify-content: space-around;
         align-items: center;
         span {
+          font-weight: 900;
           margin-top: 12px;
         }
       }
@@ -185,5 +197,28 @@ input[type=number]::-webkit-inner-spin-button{
   margin-right: 15px;
   span:first-child {
     padding-right: 80px;
+  }
+  span:last-child {
+    font-weight: 900;
+  }
+}
+
+@media (max-width: $mobile) {
+  .calc h2 {
+    text-align: center;
+  }
+
+  .summary__total {
+    bottom: -40px;
+  }
+}
+@media (min-width: $mobile) and (max-width: $desktop) {
+  .calc h2 {
+    margin: auto;
+    width: 70%;
+    text-align: center;
+  }
+  .summary__total {
+    bottom: -40px;
   }
 }
