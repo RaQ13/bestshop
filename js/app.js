@@ -25,40 +25,22 @@ const dropDownList = document.querySelector(".select__dropdown"); //schowana lis
 
 
 let totalValueNumber = 0;
-let productSum = 0;
-let orderSum = 0;
-let basic = 0;
-let professional = 25;
-let premium = 60;
-let accountingsum = 35;
-let terminalsum = 5;
-let dropdownsum = 0;
-let choosen = 0;
+let professional = 0;
+let premium = 0;
 
 
 
-
-// function calcTotal() {
-//     total = 0;
-//     const prodvalue = inpotproducts.value zamienic na numer i przemnożyc na 0.5;
-//     const order = inpotproducts.value zamienic na numer i przemnożyc na 0.25;
-//     const accvalue = accounting.checked ? 10 : 0; // jezeli true to 10 jezeli nie to 0
-//
-//     total = prodvalue + order + accounting;
-//     suma ma mieć = total
-// }
-//
-//
-// let test; // jakaszmienna == true ? 10 : 20
-//
-// if(jakaszmienna == true) {
-//     test = 10;
-// } else {
-//     text = 20;
-// }
-
-
-
+function calcTotal() {
+    totalValueNumber = 0;
+    const productSum = Number(productsInput.value) * 0.5;
+    const orderSum = Number(orderInput.value) * 0.25;
+    const accountingsum = accounting.checked ? 35 : 0; // jezeli true to 10 jezeli nie to 0
+    const terminalsum = terminal.checked ? 5 : 0;
+    // const professional = packageSelect.innerText === "Professional" ? 25 : 0;
+    // const premium = packageSelect.innerText === "Premium" ? 60 : 0;
+    total = productSum + orderSum + accountingsum + terminalsum + professional + premium;
+    totalValueNumber = total;
+}
 
 
 summaryElements.forEach(function (el){
@@ -73,21 +55,17 @@ summaryElements.forEach(function (el){
                 summaryElements[0].style.display = "block";
                 summaryElements[0].firstElementChild.firstElementChild.nextElementSibling.innerText = ev.target.value + " * $0.5";
                 summaryElements[0].firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.innerText = "$" + ev.target.value * 0.5;
-                productSum = ev.target.value * 0.5;
-                totalValueNumber = productSum;
+                calcTotal();
                 totalValue.innerText = "$"+totalValueNumber;
-                //wywołanei liczącej funckji
-                return productSum;
             }
             if (ev.target === orderInput) {
                 summaryElements[1].firstElementChild.firstElementChild.nextElementSibling.innerText = ev.target.value + " * $0.25";
                 summaryElements[1].firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.innerText = "$" + ev.target.value * 0.25;
                 summaryElements[1].style.display = "block";
-                orderSum = ev.target.value * 0.25;
-                totalValueNumber = orderSum + productSum;
+                calcTotal();
                 totalValue.innerText = "$"+totalValueNumber;
-            }return orderSum
-        } return totalValueNumber
+            }
+        }
     })
 
 
@@ -99,37 +77,43 @@ summaryElements.forEach(function (el){
     })
 
 dropDownList.addEventListener("click", function (ev){ // (".select__dropdown");
-    summaryElements[2].style.display = "block";
     if (ev.target === dropDownList) {
 
     } else {
-        summaryElements[2].firstElementChild.firstElementChild.nextElementSibling.innerText = "";
-        packageSelect.firstElementChild.innerText = ev.target.innerText;
-        if (ev.target.innerText === "Basic" && summaryElements[2].firstElementChild.firstElementChild.nextElementSibling.innerText !== "Basic") {
-            summaryElements[2].firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.innerText = "$" + basic;
+        summaryElements[2].style.display = "block";
+        if (ev.target.innerText === "Basic") {
+            summaryElements[2].firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.innerText = "$" + 0;
             summaryElements[2].firstElementChild.firstElementChild.nextElementSibling.innerText = ev.target.innerText;
-            totalValueNumber = orderSum + productSum + basic;
+            premium = 0;
+            professional = 0;
+            calcTotal()
             totalValue.innerText = "$" + totalValueNumber;
 
         }
-            if (ev.target.innerText === "Professional" && summaryElements[2].firstElementChild.firstElementChild.nextElementSibling.innerText !== "Professional") {
-            summaryElements[2].firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.innerText = "$" + professional;
+            if (ev.target.innerText === "Professional") {
+            summaryElements[2].firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.innerText = "$" + 25;
             summaryElements[2].firstElementChild.firstElementChild.nextElementSibling.innerText = ev.target.innerText;
-            totalValueNumber = orderSum + productSum + professional;
+            premium = 0;
+            professional = 25;
+            calcTotal()
             totalValue.innerText = "$" + totalValueNumber;
         }
 
-            if (ev.target.innerText === "Premium" && summaryElements[2].firstElementChild.firstElementChild.nextElementSibling.innerText !== "Premium") {
-            summaryElements[2].firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.innerText = "$" + premium;
+            if (ev.target.innerText === "Premium") {
+            summaryElements[2].firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.innerText = "$" + 60;
             summaryElements[2].firstElementChild.firstElementChild.nextElementSibling.innerText = ev.target.innerText;
-            totalValueNumber = orderSum + productSum + premium;
+            professional = 0;
+            premium = 60;
+            calcTotal()
             totalValue.innerText = "$" + totalValueNumber;
         }
         dropDownList.style.visibility = "hidden";
         selectDown.style.display = "block";
         selectUp.style.display = "none";
         ev.stopPropagation();
-    }return totalValueNumber;
+        console.log(packageSelect.innerText === "Professional");
+        console.log(professional);
+    }
 })
 
 
@@ -139,15 +123,14 @@ dropDownList.addEventListener("click", function (ev){ // (".select__dropdown");
 terminal.addEventListener("click", function (ev){
     const checked = this.checked;
     if (checked === true) {
-
+        calcTotal();
         terminalValue.style.display = "block";
-        summaryElements[4].firstElementChild.firstElementChild.nextElementSibling.innerText = "$"+terminalsum;
-        totalValueNumber += terminalsum;
+        summaryElements[4].firstElementChild.firstElementChild.nextElementSibling.innerText = "$"+5;
         totalValue.innerText = "$"+totalValueNumber;
 
     } else {
+        calcTotal();
         terminalValue.style.display = "none";
-        totalValueNumber = totalValueNumber - terminalsum;
         totalValue.innerText = "$"+totalValueNumber;
     }
 
@@ -156,14 +139,14 @@ terminal.addEventListener("click", function (ev){
 accounting.addEventListener("click", function (ev){
     const checked = this.checked;
     if (checked === true) {
+        calcTotal();
         accountingValue.style.display = "block";
         accountingValue.style.backgroundColor = "$color-green";
-        summaryElements[3].firstElementChild.firstElementChild.nextElementSibling.innerText = "$"+accountingsum;
-        totalValueNumber = totalValueNumber + accountingsum;
+        summaryElements[3].firstElementChild.firstElementChild.nextElementSibling.innerText = "$"+35;
         totalValue.innerText = "$"+totalValueNumber;
     } else {
+        calcTotal();
         accountingValue.style.display = "none";
-        totalValueNumber = totalValueNumber - accountingsum;
         totalValue.innerText = "$"+totalValueNumber;
     }
 })
