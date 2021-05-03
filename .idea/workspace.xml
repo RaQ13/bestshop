@@ -40,7 +40,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/../../../node_modules/gulp" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Loans" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Blok 3/ONL_FER_W_05_JavaScript" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -133,7 +133,20 @@
       <workItem from="1618496261543" duration="15111000" />
       <workItem from="1618579262405" duration="16209000" />
       <workItem from="1618641350671" duration="2128000" />
-      <workItem from="1618653682213" duration="255000" />
+      <workItem from="1618653682213" duration="10000000" />
+      <workItem from="1618730291587" duration="3927000" />
+      <workItem from="1618748442082" duration="622000" />
+      <workItem from="1618750976693" duration="692000" />
+      <workItem from="1618751702724" duration="1205000" />
+      <workItem from="1618848956076" duration="1878000" />
+      <workItem from="1618851990733" duration="2071000" />
+      <workItem from="1619247227408" duration="651000" />
+      <workItem from="1619334150717" duration="1204000" />
+      <workItem from="1619445053110" duration="610000" />
+      <workItem from="1619621302499" duration="599000" />
+      <workItem from="1619852601623" duration="1264000" />
+      <workItem from="1619855343870" duration="599000" />
+      <workItem from="1620027369235" duration="298000" />
     </task>
     <servers />
   </component>

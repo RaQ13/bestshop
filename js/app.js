@@ -33,6 +33,30 @@ let premium = 60;
 let accountingsum = 35;
 let terminalsum = 5;
 let dropdownsum = 0;
+let choosen = 0;
+
+
+
+
+// function calcTotal() {
+//     total = 0;
+//     const prodvalue = inpotproducts.value zamienic na numer i przemnożyc na 0.5;
+//     const order = inpotproducts.value zamienic na numer i przemnożyc na 0.25;
+//     const accvalue = accounting.checked ? 10 : 0; // jezeli true to 10 jezeli nie to 0
+//
+//     total = prodvalue + order + accounting;
+//     suma ma mieć = total
+// }
+//
+//
+// let test; // jakaszmienna == true ? 10 : 20
+//
+// if(jakaszmienna == true) {
+//     test = 10;
+// } else {
+//     text = 20;
+// }
+
 
 
 
@@ -52,6 +76,7 @@ summaryElements.forEach(function (el){
                 productSum = ev.target.value * 0.5;
                 totalValueNumber = productSum;
                 totalValue.innerText = "$"+totalValueNumber;
+                //wywołanei liczącej funckji
                 return productSum;
             }
             if (ev.target === orderInput) {
@@ -62,7 +87,7 @@ summaryElements.forEach(function (el){
                 totalValueNumber = orderSum + productSum;
                 totalValue.innerText = "$"+totalValueNumber;
             }return orderSum
-        }
+        } return totalValueNumber
     })
 
 
@@ -73,34 +98,30 @@ summaryElements.forEach(function (el){
 
     })
 
-dropDownList.addEventListener("click", function (ev){
+dropDownList.addEventListener("click", function (ev){ // (".select__dropdown");
     summaryElements[2].style.display = "block";
     if (ev.target === dropDownList) {
-        summaryElements[2].style.display = "none";
-        basic = 0;
-        professional = 0;
-        premium = 0;
-        totalValueNumber = orderSum + productSum + basic;
-        totalValue.innerText = "$" + totalValueNumber;
 
     } else {
+        summaryElements[2].firstElementChild.firstElementChild.nextElementSibling.innerText = "";
         packageSelect.firstElementChild.innerText = ev.target.innerText;
-        summaryElements[2].firstElementChild.firstElementChild.nextElementSibling.innerText = ev.target.innerText;
-        if (ev.target.innerText === "Basic") {
+        if (ev.target.innerText === "Basic" && summaryElements[2].firstElementChild.firstElementChild.nextElementSibling.innerText !== "Basic") {
             summaryElements[2].firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.innerText = "$" + basic;
+            summaryElements[2].firstElementChild.firstElementChild.nextElementSibling.innerText = ev.target.innerText;
             totalValueNumber = orderSum + productSum + basic;
             totalValue.innerText = "$" + totalValueNumber;
 
         }
-        if (ev.target.innerText === "Professional") {
-            professional = 25;
+            if (ev.target.innerText === "Professional" && summaryElements[2].firstElementChild.firstElementChild.nextElementSibling.innerText !== "Professional") {
             summaryElements[2].firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.innerText = "$" + professional;
+            summaryElements[2].firstElementChild.firstElementChild.nextElementSibling.innerText = ev.target.innerText;
             totalValueNumber = orderSum + productSum + professional;
             totalValue.innerText = "$" + totalValueNumber;
         }
-        if (ev.target.innerText === "Premium") {
-            premium = 60;
+
+            if (ev.target.innerText === "Premium" && summaryElements[2].firstElementChild.firstElementChild.nextElementSibling.innerText !== "Premium") {
             summaryElements[2].firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.innerText = "$" + premium;
+            summaryElements[2].firstElementChild.firstElementChild.nextElementSibling.innerText = ev.target.innerText;
             totalValueNumber = orderSum + productSum + premium;
             totalValue.innerText = "$" + totalValueNumber;
         }
@@ -108,9 +129,29 @@ dropDownList.addEventListener("click", function (ev){
         selectDown.style.display = "block";
         selectUp.style.display = "none";
         ev.stopPropagation();
-    }
+    }return totalValueNumber;
 })
 
+
+
+
+
+terminal.addEventListener("click", function (ev){
+    const checked = this.checked;
+    if (checked === true) {
+
+        terminalValue.style.display = "block";
+        summaryElements[4].firstElementChild.firstElementChild.nextElementSibling.innerText = "$"+terminalsum;
+        totalValueNumber += terminalsum;
+        totalValue.innerText = "$"+totalValueNumber;
+
+    } else {
+        terminalValue.style.display = "none";
+        totalValueNumber = totalValueNumber - terminalsum;
+        totalValue.innerText = "$"+totalValueNumber;
+    }
+
+})
 
 accounting.addEventListener("click", function (ev){
     const checked = this.checked;
@@ -128,18 +169,3 @@ accounting.addEventListener("click", function (ev){
 })
 
 
-terminal.addEventListener("click", function (ev){
-    const checked = this.checked;
-    if (checked === true) {
-        terminalValue.style.display = "block";
-        summaryElements[4].firstElementChild.firstElementChild.nextElementSibling.innerText = "$"+terminalsum;
-        totalValueNumber += terminalsum;
-        totalValue.innerText = "$"+totalValueNumber;
-
-    } else {
-        terminalValue.style.display = "none";
-        totalValueNumber = totalValueNumber - terminalsum;
-        totalValue.innerText = "$"+totalValueNumber;
-    }
-
-})
